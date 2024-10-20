@@ -1,0 +1,45 @@
+.HeaderPlaylist {
+  height: 230px;
+  width: 100%;
+  padding: 10px;
+
+  .myPlaylist {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+
+    img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .info {
+      height: 180px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 50px;
+      }
+      .totalTracks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 20px;
+        // margin-top: 20px;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        
+      }
+    }
+  }
+}

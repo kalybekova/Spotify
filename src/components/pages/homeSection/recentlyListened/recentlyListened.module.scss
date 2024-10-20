@@ -1,0 +1,58 @@
+.PopularPlaylists {
+  width: 100%;
+
+  .container {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .playlists {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px;
+        position: relative;
+
+        .player {
+          display: none;
+          position: absolute;
+          bottom: 40px;
+          right: 15px;
+        }
+        &:hover {
+          transition: 0.3s;
+          background: rgba(128, 128, 128, 0.29);
+          border-radius: 8px;
+          .player {
+            transition: 0.1s;
+            display: flex;
+          }
+        }
+
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+
+        h4 {
+          color: rgb(184, 180, 180);
+        }
+      }
+    }
+  }
+}

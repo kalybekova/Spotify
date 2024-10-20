@@ -1,0 +1,31 @@
+.Recommends {
+  padding: 15px;
+
+  .container {
+    .content {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 12px;
+      .block {
+        position: relative;
+        cursor: pointer;
+        img {
+          border-radius: 12px;
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        h2 {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 12;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

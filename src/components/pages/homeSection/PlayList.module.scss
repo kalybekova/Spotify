@@ -1,0 +1,84 @@
+.PlayList {
+  max-width: 400px;
+  width: 100%;
+  // min-height: 75vh;
+  background: #1d1d1d;
+  padding: 5px;
+  border-radius: 12px;
+  // margin-bottom: 30px;
+
+  .playlistClosed {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  .content {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 70px;
+
+      .mediaLibrary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        h2 {
+          font-size: 18px;
+          color: rgb(216, 216, 216);
+        }
+      }
+
+      .options {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+
+    .createPlaylist {
+      width: 100%;
+      background: #272727;
+      padding: 15px;
+      border-radius: 12px;
+
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      gap: 12px;
+
+      button {
+        background: #fff;
+        color: black;
+        font-weight: 700;
+        padding: 8px 12px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      font-weight: 600;
+      margin-left: auto;
+      padding: 3px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

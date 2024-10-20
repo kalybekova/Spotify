@@ -1,0 +1,151 @@
+.Header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 99;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(31, 31, 31);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+    .navbar_left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      .link2 {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgb(31, 31, 31);
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white;
+          font-size: 25px;
+        }
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        background: rgb(31, 31, 31);
+        border: 2px solid rgb(173, 171, 171);
+        border-radius: 20px;
+        padding: 7px;
+        width: 360px;
+        height: 40px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white;
+          font-size: 25px;
+        }
+
+        input {
+          outline: none;
+          border: none;
+          background: none;
+
+          ::placeholder {
+            color: gray;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .navbar_rigth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+      .setTheApp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+      }
+
+      .downloand {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .downloand {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Header {
+    .content {
+      .navbar_left {
+        .search {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Header {
+    .content {
+      .navbar_left {
+        .search {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Header {
+    .content {
+      .navbar_left {
+        .link2 {
+          display: flex;
+        }
+      }
+    }
+  }
+}

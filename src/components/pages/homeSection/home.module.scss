@@ -1,0 +1,79 @@
+.Home {
+  padding: 0 15px;
+
+  .container {
+    .components {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 900;
+      }
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: #1d1d1d;
+      z-index: 90;
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      button {
+        padding: 5px 9px;
+        border: none;
+        border-radius: 12px;
+        margin: 0 5px;
+        background: rgb(67, 66, 66);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+      }
+
+      .btn {
+        padding: 5px 9px;
+        border: none;
+        border-radius: 12px;
+        margin: 0 5px;
+        background: white;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .loginPrompt {
+    text-align: center;
+    padding: 50px;
+    border-radius: 12px;
+    color: #fff;
+
+ 
+
+    h5 {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #cd5050;
+    }
+
+    .loginBtn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #ff5c5c;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ff3333;
+      }
+    }
+  }
+}
