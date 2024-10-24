@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import scss from "./myPlaylist.module.scss";
 import { useGetPlayListsQuery } from "@/redux/api/playlist";
 import { useGetMeQuery } from "@/redux/api/me";
@@ -25,7 +24,7 @@ const MyPlaylist = () => {
               <Link href={""}>
                 <TfiLayoutMediaRightAlt />
               </Link>
-              <h2>Моя медиотека</h2>
+              <h2>Моя медиотека </h2>
             </div>
             <div className={scss.options}>
               <Link href={""}>

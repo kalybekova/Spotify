@@ -15,7 +15,7 @@ export const usePlayerStore = create<IPlayerStore>((set) => ({
   accessToken: "",
   trackUris: [],
   trackIndex: null,
-  activeTractURI:'',
+  activeTractURI: "",
 
   setAccessToken: (value) => set({ accessToken: value }),
   setTrackUris: (value) => set({ trackUris: value }),

@@ -17,16 +17,15 @@
     main {
       width: 100%;
       background: #1d1d1d;
-      // padding: 15px;
       border-radius: 12px;
       height: 75vh;
-      
+
       overflow-y: scroll;
 
       ::-webkit-scrollbar {
         display: none;
       }
-      -ms-overflow-style: none; /* IE и Edge */
+      -ms-overflow-style: none;
       scrollbar-width: none;
     }
   }

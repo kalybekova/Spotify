@@ -23,7 +23,6 @@ const Albums = () => {
       <div className={scss.container}>
         <h1>Популярные Альбомы</h1>
         <div className={scss.playlists}>
-          {/* <img src={data?.items.} alt="" /> */}
           {data?.items.map((item, index) => (
             <div
               key={item.album.id}

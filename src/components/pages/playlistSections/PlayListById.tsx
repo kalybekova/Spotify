@@ -1,10 +1,6 @@
 "use client";
-import {
-  useGetPlayListsByIdQuery,
-  useGetPlayListsQuery,
-} from "@/redux/api/playlist";
+import { useGetPlayListsByIdQuery } from "@/redux/api/playlist";
 import { useParams } from "next/navigation";
-import React, { useState } from "react";
 import styles from "./playlistById.module.scss";
 import { usePlayerStore } from "@/stores/usePlayerStore";
 import { LuClock3 } from "react-icons/lu";
@@ -12,7 +8,6 @@ import HeaderPlaylist from "./HeaderPlaylist";
 
 const PlayListById = () => {
   const { playlistId } = useParams();
-
   const { data } = useGetPlayListsByIdQuery(String(playlistId));
   const { setTrackUris, setTrackIndex, setActiveTractURI, activeTractURI } =
     usePlayerStore();

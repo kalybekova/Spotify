@@ -1,5 +1,4 @@
 "use client";
-
 import { useGetArtistsQuery } from "@/redux/api/artists";
 import { usePlayerStore } from "@/stores/usePlayerStore";
 import scss from "./artists.module.scss";
@@ -20,7 +19,6 @@ const Artists = () => {
   return (
     <div className={scss.PopularPlaylists}>
       <div className={scss.container}>
-        {/* <h1>Популярные артисты</h1> */}
         <div className={scss.playlists}>
           {data?.items.map((item, index) => (
             <div

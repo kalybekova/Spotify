@@ -9,13 +9,10 @@ import PlayIcon from "@/ui/playIcon/PlayIcon";
 const SearchResults = () => {
   const params = useParams();
   const decodeText = decodeURIComponent(String(params.searchQuery));
-
   const { setTrackUris, setTrackIndex, setActiveTractURI, activeTractURI } =
     usePlayerStore();
 
   const { data } = useSerachTracksQuery(decodeText);
-
-  // const firstTrack = data?.tracks.items[0];
 
   const playMusic = (index: number, uri: string) => {
     const getTrackUris = data?.tracks.items.map((item) => item.uri);
