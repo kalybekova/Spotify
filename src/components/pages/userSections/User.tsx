@@ -4,7 +4,6 @@ import scss from "./user.module.scss";
 //@ts-ignore
 import { ColorExtractor } from "react-color-extractor";
 import { useState } from "react";
-import Image from "next/navigation";
 import Artists from "../homeSection/artists/Artists";
 
 const User = () => {

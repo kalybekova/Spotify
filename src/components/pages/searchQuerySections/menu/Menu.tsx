@@ -8,7 +8,6 @@ const Menu = () => {
 
   const params = useParams();
   const decodeText = decodeURIComponent(String(params.searchQuery));
-
   const pathname = usePathname();
   const router = useRouter();
 

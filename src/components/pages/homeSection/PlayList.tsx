@@ -1,11 +1,8 @@
 "use client";
 import scss from "./PlayList.module.scss";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
-import { GoPlus } from "react-icons/go";
-import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
 import { useState } from "react";
-import HeaderPlaylist from "../playlistSections/HeaderPlaylist";
 
 export const PlayList = () => {
   const [isOpen, setIsOpen] = useState(true);

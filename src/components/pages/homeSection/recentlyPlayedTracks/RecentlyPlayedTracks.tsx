@@ -53,9 +53,6 @@ const RecentlyPlayedTracks = () => {
                   ? `${scss.track} ${scss.active}`
                   : `${scss.track}`
               }
-              // onClick={()=>{
-              //   router.push('')
-              // }}
             >
               <img src={item.track.album.images[0].url} alt={item.track.name} />
               <h4>{item.track.name}</h4>

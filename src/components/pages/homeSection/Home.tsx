@@ -28,7 +28,6 @@ const Home = () => {
             <button>Музыки</button>
           </div>
           <div className={scss.components}>
-            {/* <Recommendations /> */}
             <RecentlyPlayedTracks />
             <Albums />
             <RecentlyListened />
