@@ -31,7 +31,7 @@ const MyProfile = () => {
 
   useEffect(() => {
     const handleClickOutside = (event:any) => {
-      if (isOpen && !event.target.closest(`.${scss.profile}`)) {
+      if (isOpen && !event.target.closest(`.${scss.aa}`)) {
         setIsOpen(false);
       }
     };
