@@ -1,5 +1,4 @@
 "use client";
-
 import scss from "./myPlaylist.module.scss";
 import { useGetPlayListsQuery } from "@/redux/api/playlist";
 import { useGetMeQuery } from "@/redux/api/me";

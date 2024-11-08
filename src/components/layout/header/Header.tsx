@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import scss from "./Header.module.scss";
 import { FaSpotify } from "react-icons/fa6";
 import { MdHomeFilled } from "react-icons/md";
@@ -21,7 +20,7 @@ export const Header = () => {
                 <FaSpotify />
               </Link>
             </div>
-            <div className={scss.link}>
+            <div className={scss.linkHome}>
               <Link href={"/"}>
                 <MdHomeFilled />
               </Link>

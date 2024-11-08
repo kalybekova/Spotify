@@ -28,6 +28,24 @@
       }
     }
 
+    .linkHome {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(31, 31, 31);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+      }
+    }
+
     .navbar_left {
       display: flex;
       align-items: center;
@@ -107,43 +125,27 @@
     }
   }
 }
-
-@media (max-width: 1000px) {
-  .downloand {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 375px) {
   .Header {
     .content {
       .navbar_left {
-        .search {
-          width: 200px;
+        .linkHome {
+          display: none;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .Header {
-    .content {
-      .navbar_left {
+        .link2 {
+          display: none;
+        }
         .search {
           display: none;
         }
       }
-    }
-  }
-}
 
-@media (max-width: 600px) {
-  .Header {
-    .content {
-      .navbar_left {
-        .link2 {
-          display: flex;
+      .navbar_rigth {
+        .setTheApp {
+          display: none;
+        }
+        .link {
+          display: none;
         }
       }
     }
