@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from "react";
 import scss from "./LayoutSite.module.scss";
 import { Header } from "./header/Header";
 import Footer from "./footer/Footer";
-import Playlist from "../shared/MyPlaylist";
+import Media from "./media/Media";
 
 interface LayoutSiteProps {
   children: ReactNode;
@@ -14,7 +14,7 @@ const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
       <div className="container">
         <Header />
         <div className={scss.content}>
-          <Playlist />
+          <Media />
           <main>{children}</main>
         </div>
         <Footer />

@@ -1,14 +1,7 @@
 .PlayList {
-  max-width: 400px;
   width: 100%;
-  background: #1d1d1d;
-  padding: 5px;
-  border-radius: 12px;
+  
 
-  .playlistClosed {
-    max-width: 50px;
-    width: 100%;
-  }
   .content {
     max-width: 400px;
     width: 100%;
@@ -17,30 +10,6 @@
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-
-    .tabs {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 70px;
-
-      .mediaLibrary {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-
-        h2 {
-          font-size: 18px;
-          color: rgb(216, 216, 216);
-        }
-      }
-
-      .options {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-    }
 
     .createPlaylist {
       width: 100%;
