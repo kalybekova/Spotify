@@ -22,7 +22,6 @@ const RecentlyListened = () => {
   const getTracksUri = () => {
     const uniqueTracks = getUniqueTracks();
     const uris = uniqueTracks?.map((el) => el.track.uri);
-    console.log("Track URIs:", uris);
     setTrackUris(uris || []);
   };
 

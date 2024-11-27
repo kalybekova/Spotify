@@ -41,7 +41,7 @@ const Media = () => {
             </div>
           </div>
 
-          {data ? <MyPlaylist state={state}/> : <PlayList />}
+          {data ? <MyPlaylist state={state} /> : <PlayList state={state} />}
         </div>
       </div>
     </div>

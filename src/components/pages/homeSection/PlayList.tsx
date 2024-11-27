@@ -4,9 +4,13 @@ import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
 import { GoPlus } from "react-icons/go";
 import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
-import { useState } from "react";
+import { FC, useState } from "react";
 
-export const PlayList = () => {
+interface PlayListProps {
+  state: boolean;
+}
+
+export const PlayList: FC<PlayListProps> = ({ state }) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const closeThePlaylist = () => {
@@ -17,7 +21,7 @@ export const PlayList = () => {
     <div className={scss.PlayList}>
       <div>
         {isOpen ? (
-          <div className={scss.content}>
+          <div className={state ? scss.hidden : scss.content}>
             <div className={scss.createPlaylist}>
               <h4>Создай свой первый плейлист </h4>
               <h5>Это совсем не сложно! Мы поможем.</h5>

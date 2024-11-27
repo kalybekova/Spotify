@@ -30,7 +30,7 @@ const MyProfile = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (event:any) => {
+    const handleClickOutside = (event: any) => {
       if (isOpen && !event.target.closest(`.${scss.aa}`)) {
         setIsOpen(false);
       }
@@ -56,9 +56,9 @@ const MyProfile = () => {
       {isOpen && (
         <div className={scss.logout}>
           <ul>
-            <li>Аккаунт</li>
+            {/* <li>Аккаунт</li> */}
             <li onClick={() => router.push("/user")}>Профиль</li>
-            <li>Настройки</li>
+            {/* <li>Настройки</li> */}
             <li onClick={session ? logout : login}>
               {session ? "Выйти" : "Войти"}
             </li>
